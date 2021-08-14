@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap');
+*,*::before,*::after {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: white;
+   
+}
+button{
+    color: black;
+}
+html{
+    font-size:62,5%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.253),transparent), url(files/daniil-silantev-F6Da4r2x5to-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit:cover;
+    min-height:100vh;
+}
+.container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+}
+.box{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 4rem;
+        height:4rem;
+    }
+}
+.all{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    *{
+        position: relative;
+    }
+    position: relative;
+    input{
+        background:transparent;
+        outline: none;
+        border: none;
+        position: relative;
+    }::placeholder{
+        font-family: "Poppins",sans-serif;
+    }
+}
+.line{
+    width: 100%;
+    margin: 0px 0;
+    height: 2px;
+    background:rgb(136, 136, 136);
+    border-radius: 10px;
+    transition: 0.1s ease-in-out all;
+}
+.first,.second{
+    margin: 2rem 0rem;
+    h3{
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 3px 0px ;
+
+    }
+}
+
+.logo{
+    h3{
+        font-size: 1.5rem;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+    }
+}
+.btn{
+    width:100%;
+    margin:1rem 0 ;
+    padding:4px 0px;
+    border-radius: 20px;
+    border: none;
+    outline:none;
+    background-color: #418448;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.1s ease-in-out all;
+}
+.ext{
+    font-family: 'Montserrat',sans-serif;
+    cursor: pointer;
+}
+.box{
+    position:relative;
+}
+.box::before{
+    content:" ";
+    width: 180%;
+    height: 120%;
+    background-color: transparent;
+    position: absolute;
+    backdrop-filter: blur(8px) !important;
+    z-index: -1;
+    border-radius: 20px;
+}
+.username:focus{
+    +.l-1{background-color:white;}
+}
+.password:focus{
+    +.l-2{background-color:white;}
+}
+.box button:active{
+    background-color: #336638;
+}
